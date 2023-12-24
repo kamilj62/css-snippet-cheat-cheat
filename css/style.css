@@ -1,0 +1,50 @@
+:root {
+    --outer-space: #33393f;
+    --turquoise: #2aefcb;
+    --gin: #e0eae4;
+    --pink: #e866ec;
+}  
+
+body {
+    background-color: var(--outer-space);
+    color: var(--pink);
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    padding: 10px;
+}
+
+h1 {
+    font-size: 24px;  
+}
+
+header p {
+    color: var(--gin);
+    padding: 20px 100px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    border: 1px dotted var(--gin);
+    width: 300px;
+    margin: 5px;
+}
+
+.card-header {
+    border: 1px solid var(--gin);
+    font-size: 24px;
+}
+
+code {
+    color: var(--gin);
+}
+
+footer {
+    text-align: center;
+}
