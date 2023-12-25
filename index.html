@@ -23,12 +23,13 @@
 					Use these three properties to create a flexbot row layout
 				</p>
 				<pre class="card-code">
-                    <code>.row {
-                        display: flex;
-                        flex-wrap:wrap;
-                    }
-          </code>
-        </pre>
+					<code>
+						.row {
+							display: flex;
+							flex-wrap:wrap;
+						}
+					</code>
+				</pre>
 			</div>
 			
             <div class="card">
@@ -37,7 +38,8 @@
                     Use this to create a flexbot column layout.
                 </p>
 				<pre class="card-code">
-                    <code>.column {
+                    <code>
+					.column {
                         display: flex;
                         flex-direction: column;
                     }
@@ -51,12 +53,15 @@
                     Build a 12-column grid using CSS Grid.
                 </p>
 				<pre class="card-code">
-          <code>.row {
-              display: flex;
-              flex-wrap:wrap;
-          }
+				<code>
+				.grid {
+					display: grid;
+					width: 100%;
+					grid-template-columns:
+				repeat(12, 1fr):
+				}
           </code>
-        </pre>
+        		</pre>
 			</div>
 			
             <div class="card">
@@ -65,11 +70,15 @@
 					This will create a background linear gradient from top to bottom.
 				</p>
 				<pre class="card-code">
-          <code>.row {
-              display: flex;
-              flex-wrap:wrap;
-          }
-          </code>
+					<code>
+					.linear-gradient-background {
+						background-image :linear-
+					gradient(
+						rgba(232, 102, 236, 0.3) 0%,
+						rgba(232, 102, 236, 0.6) 100%,
+					);
+					}
+					</code>
         </pre>
 			</div>
 
@@ -79,12 +88,21 @@
                     Use transition and box shading to glow on hover.
 				</p>
 				<pre class="card-code">
-          <code>.row {
-              display: flex;
-              flex-wrap:wrap;
-          }
-          </code>
-        </pre>
+					<code>
+					.code-card .card-header {
+						border-radius: 8px;
+						transition: all 0.5s ease-in-
+					out
+					}
+
+					.code-card:hover,
+					.code-card:hover .code-header {
+						box-shadow: insert 0px 0px 8px
+					rgba(232, 102, 236, 1) 0 0 15px
+					rgba(232, 102, 236, 1); 
+					}
+					</code>
+				</pre>
 			</div>
 			
             <div class="card">
@@ -94,12 +112,13 @@
                     higher than their natural starting point.
 				</p>
 				<pre class="card-code">
-          <code>.row {
-              display: flex;
-              flex-wrap:wrap;
-          }
-          </code>
-        </pre>
+					<code>
+						.card-header {
+							position: relative;
+							margin-top: -20px;
+						}
+					</code>
+				</pre>
 			</div>
 		</main>
 		
