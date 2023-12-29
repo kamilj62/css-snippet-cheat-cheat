@@ -8,8 +8,8 @@
 body {
     background-color: var(--outer-space);
     color: var(--pink);
-    padding: 20px;
     text-align: center;
+    padding: 20px;
 }
 
 header {
@@ -17,7 +17,23 @@ header {
 }
 
 h1 {
-    font-size: 24px;  
+    font-size: 30px;  
+}
+
+h2 {
+    border: 2px solid var(--gin);
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.card:hover,
+.card:hover h2 {
+	box-shadow: inset 0px 0px 8px var(--pink), 0 0 15px var(--pink);
+}
+
+p {
+    padding: 10px;
 }
 
 header p {
@@ -27,26 +43,54 @@ header p {
 
 main {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .card{
-    border: 1px dotted var(--gin);
+    outline: 2px dashed var(--gin);
+	outline-offset: -2px;
     width: 300px;
     margin: 5px;
 }
 
-.card-header {
-    border: 1px solid var(--gin);
-    font-size: 24px;
+pre {
+    background: 
+        linear-gradient(
+          rgba(232, 102, 236, 0.3),
+          rgba(232, 102, 236, 0.6) 
+        );
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
 }
-
-pre { overflow-x: auto; }
 
 code {
     color: var(--gin);
+    -webkit-user-select: all;
+    user-select: all;
+    font-family: 'Andale Mono WT', 'Andale Mono', Monaco, 'Courier New', Courier,
+		monospace;
+    font-size: 12px;
 }
 
 footer {
     text-align: center;
+    font-size: 24px;
+    padding: 20px;
+}
+
+/* using a desktop-first approach, use `max-width` values going from wide -> narrow for a responsive design */
+@media screen and (max-width: 992px) {
+	/* on tablets, set cards to be 50% of the width */
+	.card-container {
+		flex-basis: 50%;
+	}
+}
+@media screen and (max-width: 768px) {
+	/* on mobile devices, set cards to be 100% of the width */
+	.card-container {
+		flex-basis: 100%;
+		/* margin-bottom: 1.5rem; */
+	}
 }
